@@ -202,7 +202,7 @@
 .images{
     position: absolute;
     top: 650px;
-    left: 450px;
+    left: 375px;
     margin-top: 150px;
     text-align: center;
     
@@ -211,7 +211,7 @@
 .images2{
     position: absolute;
     top: 650px;
-    left: 450px;
+    left: 375px;
     display: none;
     margin-top: 150px;
     text-align: center;
