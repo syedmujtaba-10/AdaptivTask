@@ -1,0 +1,406 @@
+*{
+ box-sizing: border-box;   
+}
+
+/*Styles for Header*/
+.mainHeader { 
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: #FFFFFF;
+    margin-bottom: -44px;
+    padding-right: 120px;
+    padding-left: 120px;
+    margin-top: 31px;
+    position: sticky;
+    top: 0%;
+    height: 78px;
+}
+.heads a{
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 0.5rem;
+    color: #181818;
+    width: 87px;
+    height: 18px;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color:#4D4D97;
+    margin:5px;
+}
+
+
+.heads a:hover{
+    opacity: 30%;
+    color: #4D4D97;
+}
+.brand{
+    text-decoration: none;
+    line-height: 22px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    color: #4D4D97;
+    border-color:#4D4D97;
+    border-style: outset;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    
+}
+
+/*Styles for the Body*/
+.maincontent{
+    background: #F3F6F6;
+    height: 1100px;
+    border-radius: 20px;
+    margin: 40px;
+    background-image: url(Ellipse\ 1.png),
+                    url(Ellipse\ 2.png),
+                    url(Ellipse\ 3.png),
+                    url(Ellipse\ 4.png) ;
+    background-repeat: no-repeat;
+    background-position: left 1007px top 210px, 
+                    left 101px top 78px, 
+                    left 274px top 481px, 
+                    left 436px top 531px;
+}
+.content{
+    
+    
+    width: 714px;
+    height: 168px;
+    padding-top: 50px;
+    margin: auto;
+    margin-top: 78px;
+    text-align: center;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 70px;
+    line-height: 84px;
+    color: #181818;
+    
+}
+
+.subcontent{
+    
+    margin: auto;
+    width: 647px;
+    height: 138px;
+    padding-top: 70px;
+    top: 281px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+    color: #4E4E4E;
+}
+/*Button*/
+.button{
+    text-align: center;
+    display: block;
+    margin-top: 90px;
+}
+.btn1{
+    width: 239px;
+    height: 60px;
+    color: white;
+    background: #181818;
+    border-radius: 40px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+}
+.btn1:hover{
+    background: #F3F6F6;
+    border: 1.5px solid #181818;
+    border-radius: 40px;
+    color: black;
+}
+.btn2{
+    width: 239px;
+    height: 60px;
+    background: #F3F6F6;
+    border: 1.5px solid #181818;
+    border-radius: 40px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+}
+.btn2:hover{
+    color: white;
+    background: #181818;
+}
+
+/*Image*/
+.wlg{
+    
+    width: 451px;
+    height: 93px;
+    margin: auto;
+    margin-top: 0px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 300px;
+    color: #000000;
+    
+}
+.img1{
+    
+    width: 265px;
+    height: 386px;
+    background: #000000;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.img2{
+    
+    width: 153px;
+    height: 386px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+.img3{
+    
+    width: 153px;
+    height: 386px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+.images{
+    position: absolute;
+    top: 650px;
+    left: 450px;
+    margin-top: 150px;
+    text-align: center;
+    
+}
+
+.images2{
+    position: absolute;
+    top: 650px;
+    left: 450px;
+    display: none;
+    margin-top: 150px;
+    text-align: center;
+    
+}
+
+.img4{
+    display: none;
+    width: 265px;
+    height: 386px;
+    background: #000000;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.image{
+    display: none;
+}
+
+/*Media Query*/
+@media (max-width: 500px){
+    
+    .mainHeader{
+        padding-right: 24px ;
+        padding-left: 29px;
+        width: 412px;
+    }
+
+    .heads{
+        position: absolute;
+        justify-content: space-around;
+        right: 100%;
+        height: 200px;
+        top: 10px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: all .5s;
+    }
+    .heads a{
+        display: block;
+    }
+    .burger{
+        display: block;
+    }
+    .burger:checked ~ .heads{
+        right:10px;
+    }
+
+    .content{
+        width: 385px;
+        height: 100px;
+        padding-top: 50px;
+        margin: auto;
+        margin-top: 78px;
+        text-align: center;
+        font-family: 'Urbanist';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 45px;
+        line-height: 49px;
+        color: #181818;
+        
+    }
+    .maincontent{
+        margin: 15px;
+        height: 1250px;
+        width: 378px;
+        
+        
+        background-position: left 791px top 210px,
+                            left 279px top 163px, 
+                            left 31px top 34px,
+                             left 65px top 524px;
+
+    }
+    .subcontent {
+        margin: auto;
+        width: 276px;
+        height: 200px;
+        padding-top: 70px;
+        top: 281px;
+        font-family: 'Urbanist';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 40px;
+        text-align: center;
+        color: #4E4E4E;
+    }
+
+    .btn1 {
+        width: 314px;
+        height: 57px;
+        color: white;
+        background: #181818;
+        border-radius: 32px;
+        margin: auto;
+        font-size: x-large;
+        font-family: 'Urbanist';
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .btn2 {
+        width: 314px;
+        height: 57px;
+        background: #F3F6F6;
+        border: 1.5px solid #181818;
+        border-radius: 32px;
+        margin: auto;
+        margin-top: 16px;
+        font-size: x-large;
+        font-family: 'Urbanist';
+        font-style: normal;
+        font-weight: 400;
+        
+    }
+
+    .wlg {
+        width: 298px;
+        height: 36px;
+        margin: auto;
+        margin-top: -86px;
+        margin-left: 63px;
+        font-family: 'Urbanist';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 30px;
+        line-height: 300px;
+        color: #000000;
+    }
+    .images{
+        display: none;
+    }
+
+    .image {
+        display: inline-block;
+        position: absolute;
+        top: 608px;
+        left: 62px;
+        width: 303px;
+        margin-top: 150px;
+        text-align: center;
+        
+        
+    }
+    .img1{
+    
+        width: 163px;
+        height: 287px;
+        background: #000000;
+        border-radius: 8px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    .img2{
+    
+        width: 101px;
+        height: 287px;
+        border-radius: 10px;
+        margin-right: 5px;
+        margin-left: 10px;
+
+        
+    }
+    
+    
+    .img3{
+        width: 101px;
+        height: 287px;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-left: 5px;
+        
+        
+    }
+    .img4{
+        display: inline;
+        width: 163px;
+        height: 287px;
+        background: #000000;
+        border-radius: 8px;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+    
+
+}    
+
+

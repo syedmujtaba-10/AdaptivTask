@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400&display=swap" rel="stylesheet">
+    <title>Adaptiv</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            if ( $(window).width() > 600) {
+
+                $('.images').mouseenter(function(){
+	            $('.images').fadeOut();
+                $('.images2').fadeIn(0.5);
+                });
+                $(".images2").mouseleave(function(){
+                $('.images2').fadeOut(500);
+                $('.images').fadeIn();
+                });
+                $('.burger').onclick(function(){
+                $('.heads').slideDown();
+                });
+            }
+            else{
+            }
+        });
+    </script>
+</head>
+<!-- Navigation Bar -->
+<header class="mainHeader" class="shortHeader">
+    <a href="" class="brand" >
+        Adaptiv
+    </a>
+    <nav class="heads">
+        <a href="https://docs.google.com/document/d/1uKJGLDI8wHnniaxc-smNLMLAr7vx15dPiGhk8j4p2uc/edit" target="_blank" >White paper</a>
+        <a href="https://www.adaptiv.me/academy" >Academy</a>
+        <a href="https://www.adaptiv.me/careers" >Careers</a>
+        <a href="https://www.adaptiv.me/signup">Sign up</a>
+    </nav>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    
+</header>
+<!-- Body -->
+<body > 
+    <div class="maincontent">
+        <div class="content">We just changed the whole game</div>
+        <div class="subcontent">We are building a social network for professionals that will shake things up, and you wouldn't want to be left behind</div>
+        <div class="button">
+            <button class="btn1">I want to be a part</button>
+            <button class="btn2">Tell me more</button>
+        </div>
+        <div class="wlg">Watch. Learn. Grow.</div>
+        <!-- Images -->
+        <div class="images"  >
+            <img class="img1 m1" src="Profile_NFT.png">
+            <img class="img2 m1" src="photo2.jpeg">
+            <img class="img3" src="phot3.jpeg">
+            <img class="img4" src="Profile_NFT.png">
+        </div>
+        <div class="images2">
+            <img class="img2 m2" src="photo1.jpeg"  >
+            <img class="img1 m2" src="Profile_NFT.png">
+            <img class="img3" src="phot3.jpeg">
+            
+        </div>
+        <div class="image" >
+            <img class="img2 m1" src="photo2.jpeg">
+            <img class="img1 m1" src="Profile_NFT.png">
+            <img class="img4" src="Profile_NFT.png">
+            <img class="img3" src="phot3.jpeg">
+        </div>
+       
+    </div>
+</body>
+</html>
